@@ -1,7 +1,10 @@
 <template>
   <div id="nav">
     <router-link to="/">Home</router-link> |
-    <router-link to="/animation">Animation</router-link>
+    <router-link to="/animation">Animation</router-link> |
+    <router-link to="/scroll-trigger">ScrollTrigger</router-link> |
+    <router-link to="/click-trigger">ClickTrigger</router-link> |
+    <router-link to="/mouse-trigger">MouseTrigger</router-link>
   </div>
   <router-view />
 </template>

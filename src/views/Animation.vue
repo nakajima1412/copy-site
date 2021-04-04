@@ -82,11 +82,12 @@
 </template>
 
 <script>
+import { defineComponent } from 'vue'
 import FadeInAnime from '@/components/FadeInAnime'
 import FadeUpAnime from '@/components/FadeUpAnime'
 import FadeDownAnime from '@/components/FadeDownAnime'
 
-export default {
+export default defineComponent({
   name: 'Animation',
   components: {
     FadeInAnime,
@@ -100,32 +101,11 @@ export default {
       times,
     }
   },
-}
+})
 </script>
 
 <style lang="scss" scoped>
 .wrapper {
   overflow: hidden;
-}
-
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-
-  & .flex-center {
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.ml-20 {
-  margin-left: 20px;
-}
-.mr-20 {
-  margin-right: 20px;
-}
-
-.mb-20 {
-  margin-bottom: 20px;
 }
 </style>

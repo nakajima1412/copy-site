@@ -14,7 +14,25 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ '../views/Animation.vue'),
+      import(/* webpackChunkName: "animation" */ '../views/Animation.vue'),
+  },
+  {
+    path: '/scroll-trigger',
+    name: 'ScrollTrigger',
+    component: () =>
+      import(/* webpackChunkName: "trigger" */ '../views/ScrollTrigger.vue'),
+  },
+  {
+    path: '/click-trigger',
+    name: 'ClickTrigger',
+    component: () =>
+      import(/* webpackChunkName: "trigger" */ '../views/ClickTrigger.vue'),
+  },
+  {
+    path: '/mouse-trigger',
+    name: 'MouseTrigger',
+    component: () =>
+      import(/* webpackChunkName: "trigger" */ '../views/MouseTrigger.vue'),
   },
 ]
 
